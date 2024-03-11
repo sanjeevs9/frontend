@@ -2,7 +2,7 @@ import logo from "../img/logo.png";
 import burger from "../img/food/p9.png";
 import pizza from "../img/food/p12.png";
 import thali from "../img/pics/thali.png";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import axios from "axios";
 
 import DropDown from "./DropDown";
@@ -43,19 +43,19 @@ export default function Front() {
       });
   }
 
-  // useEffect(() => {
-  //   function requestNotificationPermission() {
-  //     Notification.requestPermission().then(function(permission) {
-  //       if (permission === 'granted') {
-  //         console.log('Notification permission granted.');
-  //       } else {
-  //         console.log('Unable to get permission to notify.');
-  //       }
-  //     });
-  //   }
+  useEffect(() => {
+    function requestNotificationPermission() {
+      Notification.requestPermission().then(function(permission) {
+        if (permission === 'granted') {
+          console.log('Notification permission granted.');
+        } else {
+          console.log('Unable to get permission to notify.');
+        }
+      });
+    }
 
-  //   requestNotificationPermission();
-  // }, []);
+    requestNotificationPermission();
+  }, []);
 
   return (
     <>
