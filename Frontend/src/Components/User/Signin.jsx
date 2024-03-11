@@ -54,11 +54,17 @@ export default function Signin(){
                     (e)=>{setpassword(e.target.value)}
                 }></input>
                     <div className='flex flex-row justify-between sm:justify-evenly lg:justify-between w-full' >
-                        <div className='flex gap-2'>
-                            <div className=''><input disabled id="disabled-checkbox" type="checkbox" value="" className=" w-4 h-4 border-gray-300 rounded"></input></div>
-                            <div className=''>Remember me</div>
-                            
-                        </div>    
+                    <div className="flex gap-2">
+  <div className="">
+    <input
+      id="remember-me-checkbox"
+      type="checkbox"
+      value=""
+      className=" w-4 h-4 border-gray-300 rounded"
+    ></input>
+  </div>
+  <div className="-my-0.5">Remember me</div>
+</div>  
                         <div className='flex cursor-pointer text-xs pt-1'>Term and Conditons</div>
                     </div>
                 <button className='bg-blue-500 p-2 w-32 rounded-md text-white' onClick={()=>{handle()}}>Login</button>

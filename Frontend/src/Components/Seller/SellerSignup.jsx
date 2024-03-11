@@ -81,20 +81,19 @@ export default function SellerSignup() {
               }}
             ></input>
             <div className="flex flex-row justify-between sm:justify-evenly lg:justify-between w-full">
-              <div className="flex gap-2">
-                <div className="">
-                  <input
-                    disabled
-                    id="disabled-checkbox"
-                    type="checkbox"
-                    value=""
-                    className=" w-4 h-4 border-gray-300 rounded"
-                  ></input>
-                </div>
-                <div className="">Remember me</div>
-              </div>
+            <div className="flex gap-2">
+  <div className="">
+    <input
+      id="remember-me-checkbox"
+      type="checkbox"
+      value=""
+      className=" w-4 h-4 border-gray-300 rounded"
+    ></input>
+  </div>
+  <div className="">Remember me</div>
+</div>
               <div className="flex cursor-pointer text-xs pt-1">
-                Term and Conditons
+              Term and Conditions
               </div>
             </div>
 
@@ -106,7 +105,7 @@ export default function SellerSignup() {
                 Create Account
               </button>
             </div>
-            <div className="flex gap-2 mx-16">
+            <div className="flex gap-2 mx-16 pl-3">
               <span className="font-semibold text-xs">Already registered?</span>
               <button
                 className="text-red-600 font-semibold -my-2 text-sm"
@@ -114,7 +113,7 @@ export default function SellerSignup() {
                   navigate("/login");
                 }}
               >
-                Signin
+                Sign In
               </button>
             </div>
             <img src={stair} className="flex md:hidden h-80" />

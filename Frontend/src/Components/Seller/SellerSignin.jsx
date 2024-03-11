@@ -55,20 +55,20 @@ export default function SellerSignin() {
               }}
             ></input>
             <div className="flex flex-row justify-between sm:justify-evenly lg:justify-between w-full">
-              <div className="flex gap-2">
-                <div className="">
-                  <input
-                    disabled
-                    id="disabled-checkbox"
-                    type="checkbox"
-                    value=""
-                    className=" w-4 h-4 border-gray-300 rounded"
-                  ></input>
-                </div>
-                <div className="">Remember me</div>
-              </div>
+            <div className="flex gap-2">
+  <div className="">
+    <input
+      id="remember-me-checkbox"
+      type="checkbox"
+      value=""
+      className=" w-4 h-4 border-gray-300 rounded"
+    ></input>
+  </div>
+  <div className="">Remember me</div>
+</div>
               <div className="flex cursor-pointer text-xs pt-1">
-                Term and Conditons
+              Term and Conditions
+
               </div>
             </div>
 
@@ -77,13 +77,13 @@ export default function SellerSignin() {
                 className="bg-blue-500 p-2 w-36  rounded-md text-white "
                 onClick={handle}
               >
-                Signin
+                Sign In
               </button>
             </div>
-            <div>
-              <span className="font-bold text-sm">Dont have an account?</span>
+            <div className="pl-14">
+              <span className="font-semibold text-xs">Dont have an account? </span>
               <button
-                className="text-red-600 font-semibold cursor-pointer"
+                className="text-red-600 font-semibold cursor-pointer text-sm"
                 onClick={() => {
                   navigate("/create");
                 }}
