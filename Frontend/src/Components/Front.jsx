@@ -1,7 +1,7 @@
 // import logo from "../img/logo.png";
 import burger from "../img/food/p9.png";
 import pizza from "../img/food/p12.png";
-import thali from "../img/front/f.jpg";
+import thali from "../img/logo.png";
 import { useState } from "react";
 import axios from "axios";
 
