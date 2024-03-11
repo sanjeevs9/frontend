@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-// import logo from "../../img/logo.png";
+import logo from "../../img/logo.png";
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ export default function Sidebar() {
         <div className="flex flex-col justify-between h-full">
           <div className="flex-grow">
             <div className="px-4 py-6 text-center border-b flex">
-              
+              <img src={logo} className="h-16 w-16"></img>
               <div className="flex pt-6">
                 <h1 className="text-xl font-bold leading-none ">
                   <span className="text-yellow-700">Food2</span> You
