@@ -1,4 +1,4 @@
-import logo from "../../img/logo.png";
+// import logo from "../../img/logo.png";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Search from "./Search";
@@ -52,7 +52,7 @@ export default function Navbar({ className }) {
     <>
       <div className=" flex flex-row justify-between p-1 pr-16 pl-10 sm:pl-16">
         <div className="cursor-pointer" onClick={()=>{navigate('/user')}}>
-          <img src={logo} className="h-16 w-16"></img>
+          {/* <img src={logo} className="h-16 w-16"></img> */}
         </div>
         <div className="hidden sm:flex justify-center items-center ">
           <Search className={`${className}`} />

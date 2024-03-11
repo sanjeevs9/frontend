@@ -1,4 +1,4 @@
-import logo from "../img/logo.png";
+// import logo from "../img/logo.png";
 import burger from "../img/food/p9.png";
 import pizza from "../img/food/p12.png";
 import thali from "../img/front/thali.jpg";
@@ -78,7 +78,7 @@ export default function Front() {
 
         <div className=" h-screen  bg-[#fff7ed] rounded-xl">
           <div className="flex p-12 justify-between">
-            <img src={logo} className="h-10 w-10"></img>
+            {/* <img src={logo} className="h-10 w-10"></img> */}
             <ul className="hidden sm:flex gap-10 pr-2 ">
               <li className="cursor-pointer" onClick={handle}>
                 Dashboard
